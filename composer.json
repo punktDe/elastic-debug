@@ -1,0 +1,18 @@
+{
+    "description": "Debug Tools for the Elastcisearch Contentrepository Integration",
+    "type": "neos-package",
+    "name": "punktde/elastic-debug",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PunktDe\\Elastic\\Debug\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PunktDe.Elastic.Debug"
+        }
+    }
+}

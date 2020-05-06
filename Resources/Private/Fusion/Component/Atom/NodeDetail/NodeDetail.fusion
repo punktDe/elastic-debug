@@ -1,0 +1,16 @@
+prototype(PunktDe.Elastic.Debug:Component.Atom.NodeDetail) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">{item.nodeType.name}</h5>
+                <table>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>{item.identifier}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <PunktDe.Elastic.Debug:Component.Atom.ElasticsearchDocument />
+    `
+}

@@ -1,0 +1,14 @@
+prototype(PunktDe.Elastic.Debug:Component.Molecule.Subtree) < prototype(Neos.Fusion:Component) {
+
+    rootNode = null
+    padding = ''
+
+    nodes = ${q(this.rootNode).children()}
+
+    renderer = Neos.Fusion:Loop {
+        items = ${props.nodes}
+        itemRenderer = PunktDe.Elastic.Debug:Component.Molecule.Node {
+            padding = ${props.padding}
+        }
+    }
+}

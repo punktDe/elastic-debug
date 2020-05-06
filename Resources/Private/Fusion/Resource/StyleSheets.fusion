@@ -1,0 +1,5 @@
+prototype(PunktDe.Elastic.Debug:Resource.StyleSheets) < prototype(Neos.Fusion:Array) {
+    main = PunktDe.Elastic.Debug:Resource.CssInclude {
+        path = 'resource://PunktDe.Elastic.Debug/Public/Styles/ElasticsearchDebugView.css'
+    }
+}

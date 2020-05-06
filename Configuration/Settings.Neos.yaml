@@ -1,0 +1,16 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'PunktDe.Elastic.Debug': true
+
+    userInterface:
+      editPreviewModes:
+        elasticsearch:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: elasticsearchView
+          title: 'Elasticsearch Debug'
+          position: 120
+
+

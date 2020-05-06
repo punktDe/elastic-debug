@@ -1,0 +1,16 @@
+{
+  "name": "punktde-elastic-debug",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

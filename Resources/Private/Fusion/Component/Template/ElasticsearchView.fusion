@@ -1,0 +1,7 @@
+prototype(PunktDe.Elastic.Debug:Component.Template.ElasticSearchView) < prototype(Neos.Fusion:Component) {
+
+    renderer = afx`
+        <PunktDe.Elastic.Debug:Component.Organism.ContentTree />
+    `
+
+}

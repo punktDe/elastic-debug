@@ -1,0 +1,9 @@
+prototype(PunktDe.Elastic.Debug:Component.Atom.ElasticsearchDocument) < prototype(Neos.Fusion:Component) {
+    resultNode = ${Search.query(documentNode).exactMatch('__identifier', item.identifier).appendAtPath('_source', []).execute().getFirst()}
+    document = ${Search.query(documentNode).getFullElasticSearchHitForNode(this.resultNode)}
+    document.@process.debug = Neos.Fusion:Debug
+
+    renderer = afx`
+        {props.document}
+    `
+}

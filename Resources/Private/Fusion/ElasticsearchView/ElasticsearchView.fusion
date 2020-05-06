@@ -1,0 +1,21 @@
+elasticsearchView = Neos.Fusion:Case {
+
+    default {
+        @position = 'end 9999'
+        condition = true
+        type = 'Neos.Neos:Page'
+
+        prototype(Neos.Neos:Page) {
+            head {
+                stylesheets = PunktDe.Elastic.Debug:Resource.StyleSheets
+            }
+
+            bodyTag.attributes.class = 'neos neos-module'
+
+            body >
+            body = Neos.Fusion:Component {
+                renderer = PunktDe.Elastic.Debug:Component.Template.ElasticSearchView
+            }
+        }
+    }
+}

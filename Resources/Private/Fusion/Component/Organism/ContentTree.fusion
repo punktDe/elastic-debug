@@ -1,0 +1,6 @@
+prototype(PunktDe.Elastic.Debug:Component.Organism.ContentTree) < prototype(Neos.Fusion:Component) {
+
+    @context.item = ${q(documentNode).children('[instanceof Neos.Neos:ContentCollection]').get(0)}
+
+    renderer = PunktDe.Elastic.Debug:Component.Molecule.Node
+}
